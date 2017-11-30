@@ -1,0 +1,177 @@
+/*
+@media (min-width: 960px) and (max-width: 1290px) {
+    #aboutBlock {
+        width: 83%;
+    }
+}  
+
+@media (min-width: 782px) and (max-width: 959px) {
+    #aboutBlock {
+        width: 83%;
+    }
+}
+*/
+
+@media (min-width: 650px) and (max-width: 781px) {
+    /*стили для about us*/
+    .about {
+    flex-direction: row;
+    padding-top: 250px;
+    } 
+    /*конец стилей для about us*/
+    
+    /* стили для porfolio */
+    #bg3 {
+    height: 400px;    
+    }
+    /* конец стилий для porfolio */
+    
+    /* стили для company */
+    .companyBlock {
+    flex-direction: column;
+    }
+    
+    .lastPost {
+    flex: 1 1 41.5%;
+    margin: 100px 0 0 0;
+    }
+    /* конец стилей для company */
+}
+
+@media (min-width: 480px) and (max-width: 649px) {
+    /* стили для шапки */
+    .logo {
+    background-size: 91%;
+    }
+    /*стили для about us*/
+    
+    .about {
+    flex-direction: column;
+    padding-top: 320px;
+    }
+    
+    #aboutBlock h2 {
+    width: auto;
+    }
+    /*конец стилей для about us*/
+    
+    /* стили для слайдбар */
+    #carousel {
+        height: 280px;
+        width: 0;
+        margin: 0 auto;
+    }
+
+    #carousel img {
+        max-width: 200px;
+        max-height: 101px;
+    }
+    /* конец стилей для слайдбар */
+    
+    /* стили для porfolio */
+    #bg3 {
+    height: auto;
+    }
+    /* конец стилий для porfolio */
+    
+    /* стили для company */
+    .companyBlock {
+    flex-direction: column;
+    }
+    
+    .lastPost {
+    flex: 1 1 41.5%;
+    margin: 100px 0 0 0;
+    }
+    /* конец стилей для company */
+    
+    /* стили для footer */
+    .copyright p {
+        display: block;
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+
+    .copyright .copyrightEnd {
+        float: left;
+    }
+    /* конец стилей для footer */
+}
+
+@media (max-width: 480px) {
+    /* стили для шапки */
+    .logo {
+    background-size: 100%;
+    }
+    
+    .nav-open.pushed {
+    justify-content: flex-start;
+    }
+    
+    .helloText a {
+    font-size: 4.5em;
+    }
+
+    .clinicText a {
+    font-size: 1.6em;
+    }
+    /* конец стилей для шапки */
+    
+    /*стили для about us*/
+    .about {
+    flex-direction: column;
+    padding-top: 320px;
+    } 
+    
+    #aboutBlock {
+    max-height: 371px;
+    overflow-x: hidden;  
+    }
+
+    #aboutBlock h2 {
+    width: auto;
+    }
+    /*конец стилей для about us*/
+    
+    /* стили для слайдбар */
+    #carousel {
+        height: 250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #carousel img {
+        max-width: 100px;
+        max-height: 51px;
+    }
+    /* конец стилей для слайдбар */
+    
+    /* стили для porfolio */
+    #bg3 {
+    height: 300px;
+    }
+    /* конец стилий для porfolio */
+    
+    /* стили для company */
+    .companyBlock {
+    flex-direction: column;
+    }
+    
+    .lastPost {
+    flex: 1 1 41.5%;
+    margin: 100px 0 0 0;
+    }
+    /* конец стилей для company */
+    
+    /* стили для footer */
+    .copyright p {
+        display: block;
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+
+    .copyright .copyrightEnd {
+        float: left;
+    }
+    /* конец стилей для footer */
+}  

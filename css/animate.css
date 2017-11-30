@@ -1,0 +1,92 @@
+/* стили для логотипа */
+/* by alovat 2016 */
+/* http://alovat.ru */
+.text--line {
+  font-size: .5em;
+}
+
+.svglogo {
+  width: 100%;
+  height: 100%;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 4px;
+  animation: stroke-offset 3s ease-out;
+}
+.text-copy:nth-child(1) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 35%;
+}
+
+@keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 55%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+/* конец стилей для логотипа */
+
+/* пульсация для кнопок левого бара */
+.buttonClick:active {
+	animation: anim-buttonClick .1s ease;
+}
+
+@keyframes anim-buttonClick {
+	50% {
+		opacity: 1;
+		transform: scale3d(0.5, 0.5, 1);
+	}
+	100% {
+		opacity: .5;
+		transform: scale3d(1.1, 1.1, 1);
+	}
+}
+/* конец пульсации для кнопок левого бара */
+
+/*.text-copy:nth-child(1) {
+  stroke: red;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+  stroke: red;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(3) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: rgba(255,255,255,.2);
+  stroke-dashoffset: 35%;
+}
+
+@keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 55%;
+    stroke-dasharray: 0 87.5%;
+  }
+}*/

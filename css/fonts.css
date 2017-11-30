@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'HelveticaRegular';
+    src: url('../fonts/HelveticaRegular/HelveticaRegular.eot');
+    src: url('../fonts/HelveticaRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaRegular/HelveticaRegular.wolff') format('woff'),
+        url('../fonts/HelveticaRegular/HelveticaRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../fonts/HelveticaBold/HelveticaBold.eot');
+    src: url('../fonts/HelveticaBold/HelveticaBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaBold/HelveticaBold.wolff') format('woff'),
+        url('../fonts/HelveticaBold/HelveticaBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Scada-Regular';
+	src: url('../fonts/Skada/Scada-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'PT-Serif';
+	src: url('../fonts/PT-Serif/PT_Serif-Web-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+    

@@ -1,0 +1,423 @@
+/* by alovat 2016 */
+/* сброс стилей */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* конец сброс стилей */
+
+body {
+    width: 100%;
+}
+
+/* стили для шапки */
+header {
+    width: 100%;
+    height: 470px;
+    background: url(../img/Rectangle-1.png);
+}
+
+.headerTop {
+    width: 83%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background: url(../img/line.png);
+}
+
+.logo {
+    display: block;
+    width: 227px;
+    height: 48px;
+    flex: 1 1 31.5%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+/*
+    float: left;
+    margin-top: 40px;
+*/
+    background: url(../img/Logo.png) no-repeat;
+}
+
+nav {
+    display: block;
+    width: 51.5%;
+    height: 41px;
+    background: url(../img/Forma-1.png) no-repeat;
+    background-position: right;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+/*
+nav:active {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background: url(../img/Forma-1.png) no-repeat;
+    background-position: right;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+    transform: scale(0.608,0.603);
+    transition: all .05s ease;
+}
+*/
+
+.icon .nav-open {
+    display: none;
+}
+
+.nav-open.pushed {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    height: 41px;
+    cursor: default;
+    margin-right: 41px;
+}
+
+.nav-open.pushed li {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    margin: 0 6px 0 6px;
+}
+
+.nav-open.pushed a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+.nav-open.pushed:hover a:hover {
+    color: #fa6900;
+}
+
+.helloText {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.helloText a {
+    line-height: 0.9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5.8em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.clinicText {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.clinicText a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.3em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* конец стилей для шапки */
+
+/* стили для wrapper */
+.wrapper {
+    width: 100%;
+}
+
+/*стили для about us*/
+.bg {
+    width: 100%;
+    background: #f1f1f1;
+}
+
+.about {
+    width: 83%;
+    min-height: 532px;
+    max-height: auto;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    background: #f1f1f1;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#aboutBlock {
+    width: 83%;
+    min-height: 286px;
+    max-height: auto;
+    background: #ffffff;
+    position: absolute;
+    top: 371px;
+    box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.35);
+}
+
+#aboutBlock h2 {
+    width: 420px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px auto 30px auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.25);
+}
+
+#aboutBlock p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    text-align: justify;
+    padding: 0 20px 20px 20px;
+}
+
+.about figure {
+    display: flex;
+    flex-flow: row;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 162px;
+    padding: 0 25px 0 25px;
+    margin: 0 auto 50px auto;
+}
+
+.about figcaption {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    width: 213px;
+    text-align: center;
+    margin-left: -26px;
+}
+/*конец стилей для about us*/
+
+/* стили для слайдбар */
+#bg2 {
+    width: 100%;
+    min-height: 472px;
+    max-height: auto;
+    background: url(../img/Rectangle-1-copy-2.png);
+}
+
+.carouselBlock {
+    width: 69.5%;
+    margin: 0 auto;
+}
+
+.carouselBlock p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+#carousel {
+    height: 350px;
+    width: 0;
+    margin: 0 auto;
+}
+
+#carousel img {
+    max-width: 445px;
+    max-height: 261px;
+}
+/* конец стилей для слайдбар */
+
+/* стили для porfolio */
+#bg3 {
+    width: 100%;
+    height: 523px;
+    background: #f1f1f1;
+}
+
+.porfolio {
+    height: 350px;
+    width: 69.5%;
+    margin: 0 auto;
+}
+
+.porfolio img {
+    width: 999px;
+    max-height: 466px;
+    margin: 0 auto;
+}
+/* конец стилий для porfolio */
+
+/* стили для textBlock */
+#textBlock {
+    width: auto;
+    max-height: 532px;
+}
+
+#textBlock img {
+    width: 100%;
+    max-height: 532px;
+}
+/* конец стилей для textBlock */
+
+/* стили для company */
+#bg4 {
+    width: 100%;
+    min-height: 552px;
+    max-height: auto;
+    background: #f1f1f1;
+}
+
+.companyBlock {
+    width: 83%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+}
+
+.company {
+    flex: 1 1 41.5%;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+.company .companyLogo {
+    width: 227px;
+    height: 48px;
+    margin-top: 100px;
+} 
+
+.company img {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin: 20px 0 0 0;
+}
+
+.company p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-align: justify;
+    margin: 20px 10px 0 0;
+}
+
+.lastPost {
+    flex: 1 1 41.5%;
+    margin: 100px 0 0 100px;
+}
+
+.lastPost h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.post {
+    margin-top: 30px;
+}
+
+.post img {
+    float: left;
+    padding: 0 20px 0 0;
+}
+
+.post h3 a {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.post p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 12px;
+}
+/* конец стилей для company */
+/* конец стилей для wrapper */
+
+/* стили для footer */
+footer {
+    width: 100%;
+    height: 68px;
+    background: #69d2e7;
+}
+
+.copyright {
+    width: 83%;
+    margin: 0 auto;
+}
+
+.copyright p {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.copyright .copyrightEnd {
+    float: right;
+}
+/* конец стилей для footer */
